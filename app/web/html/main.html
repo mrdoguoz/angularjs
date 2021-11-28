@@ -1,0 +1,27 @@
+<div class="p-5">
+
+    <p class="mb-5">Please, write the value(s) what ​​you want to {{process}} : </p>
+
+    <form action="form">
+
+        <input ng-model="a" type="number" class="form-control">
+        <br />
+        <input ng-if="!constantProcess && !exponentProcess && !squarerootProcess" ng-model="b" type="number" class="form-control">
+       
+
+    </form>
+
+    <div class="mt-5">
+
+        <button ng-hide="!addingProcess" ng-click="secAdd()" type="button" class="btn btn-success form-control">Sum</button>
+        <button ng-hide="!subtractProcess" ng-click="secSubtract()" type="button" class="btn btn-success form-control">Subtract</button>
+        <button ng-hide="!multiplyProcess" ng-click="secMultiply()" type="button" class="btn btn-success form-control">Multiply</button>
+        <button ng-hide="!divideProcess" ng-click="secDivide()" type="button" class="btn btn-success form-control">Divide</button> 
+        <button ng-hide="!constantProcess" ng-click="secConstant()" type="button" class="btn btn-success form-control">Constant</button> 
+        <button ng-hide="!exponentProcess" ng-click="secExponent()" type="button" class="btn btn-success form-control">Exponent</button> 
+        <button ng-hide="!squarerootProcess" ng-click="secSquareroot()" type="button" class="btn btn-success form-control">Squareroot</button> 
+
+    </div>
+
+
+</div>

@@ -1,0 +1,20 @@
+<div class="p-5">
+
+    <p class="mb-5">Please, write the values what ​​you want to multiply : </p>
+
+    <form action="form">
+
+        <input ng-model="a" type="number" class="form-control">
+        <br />
+        <input ng-model="b" type="number" class="form-control">
+
+    </form>
+
+    <div class="mt-5">
+
+        <button ng-disabled = "!a || !b" ng-click="divide()" type="button" class="btn btn-success form-control">Divide</button>
+
+    </div>
+
+
+</div>
